@@ -241,3 +241,18 @@
 2020-10-21 13:15:32,424 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
 2020-10-21 13:15:32,424 - engine_logger:INFO - Starting webserver... (not implemented)
 2020-10-21 13:15:32,424 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:26:18,698 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:26:18,698 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:26:18,698 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:26:18,698 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:26:18,698 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:26:18,698 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:26:18,698 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:26:18,698 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:26:18,699 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:26:18,701 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:26:18,701 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:26:18,701 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:26:18,701 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:26:18,701 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:26:18,701 - engine_logger:INFO - Done init in MainProgram.

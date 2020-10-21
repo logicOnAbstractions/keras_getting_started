@@ -1,0 +1,12 @@
+# basic mode -defaults. Mode can be selected from a cmdline argument.
+# thus we can define multiple modes independantly here & just switch when we launch as we need
+default:
+  main_program:
+    foo: 42
+    undeclared_attribute: "ignored"
+foo_mode:
+  main_program:
+    foo: foo
+bar_mode:
+  main_program:
+    foo: bar

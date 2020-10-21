@@ -1,0 +1,243 @@
+2020-10-21 10:40:34,183 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:40:34,183 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:40:34,183 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:40:34,183 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:40:34,183 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:40:34,184 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:40:34,184 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:40:34,184 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 10:40:34,187 - engine_logger:INFO - Loaded yaml configs: {'default': {'game': {'grid_size': 90, 'interval': 45, 'start_pattern': 'random'}, 'main_program': {'delay_start': False, 'display': True}}, 'foo_mode': {'game': {'start_pattern': 'gosper'}, 'main_program': {'display': False}}, 'bar_mode': {'game': {'start_pattern': 'glider'}, 'main_program': {'display': False}}}
+2020-10-21 10:40:34,187 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): delay_start, False
+2020-10-21 10:40:34,187 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): display, True
+2020-10-21 10:40:34,187 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:41:35,915 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:41:35,915 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:41:35,915 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:41:35,916 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:41:35,916 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:41:35,916 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:41:35,916 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:41:35,917 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 10:41:35,918 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:41:35,918 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:42:14,403 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:42:14,404 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:42:14,404 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:42:14,404 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:42:14,404 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:42:14,404 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:42:14,404 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:42:14,405 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 10:42:14,407 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:42:14,407 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:42:14,407 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:42:58,212 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:42:58,212 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:42:58,212 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:42:58,212 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:42:58,212 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:42:58,212 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:42:58,212 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:42:58,213 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='bar')
+2020-10-21 10:42:58,215 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:42:58,215 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:43:20,280 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:43:20,280 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:43:20,281 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:43:20,281 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:43:20,281 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:43:20,281 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:43:20,281 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:43:20,282 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='bar_mode')
+2020-10-21 10:43:20,283 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:43:20,284 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:43:20,284 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:44:41,734 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:44:41,734 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:44:41,734 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:44:41,735 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:44:41,735 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:44:41,735 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:44:41,735 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:44:41,736 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='bar_mode')
+2020-10-21 10:44:41,737 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:44:41,737 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 10:44:41,738 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:44:41,738 - engine_logger:INFO - Attribute foo has been set to bar
+2020-10-21 10:44:41,738 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:47:10,890 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:47:10,890 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:47:10,890 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:47:10,891 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:47:10,891 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:47:10,891 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:47:10,891 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:47:10,891 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 10:47:10,892 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='bar_mode')
+2020-10-21 10:47:10,894 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:47:10,894 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 10:47:10,894 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:47:10,894 - engine_logger:INFO - Attribute foo has been set to bar, overriding default values if any.
+2020-10-21 10:47:10,894 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 10:56:15,851 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 10:56:15,851 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 10:56:15,851 - engine_logger:INFO - logger info level msg 
+2020-10-21 10:56:15,851 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 10:56:15,851 - engine_logger:ERROR - logger error level msg 
+2020-10-21 10:56:15,851 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 10:56:15,851 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 10:56:15,851 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 10:56:15,852 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 10:56:15,854 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 10:56:15,854 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 10:56:15,854 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 10:56:15,854 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 11:35:57,413 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 11:35:57,414 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 11:35:57,414 - engine_logger:INFO - logger info level msg 
+2020-10-21 11:35:57,415 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 11:35:57,415 - engine_logger:ERROR - logger error level msg 
+2020-10-21 11:35:57,416 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 11:36:01,590 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 11:36:07,963 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 11:36:07,977 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 11:36:43,066 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 11:36:43,067 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 11:36:43,069 - engine_logger:INFO - logger info level msg 
+2020-10-21 11:36:43,070 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 11:36:43,071 - engine_logger:ERROR - logger error level msg 
+2020-10-21 11:36:43,071 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 11:36:43,072 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 11:36:43,072 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 11:36:43,079 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='default')
+2020-10-21 11:36:54,785 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 11:37:04,268 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 11:37:21,064 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 11:37:26,388 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 11:37:26,920 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:03:58,390 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:03:58,390 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:03:58,390 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:03:58,390 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:03:58,390 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:03:58,390 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:03:58,390 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:03:58,390 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:03:58,391 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo')
+2020-10-21 13:03:58,393 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:03:58,393 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:03:58,393 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:04:15,504 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:04:15,504 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:04:15,505 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:04:15,505 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:04:15,505 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:04:15,505 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:04:15,505 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:04:15,505 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:04:15,508 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo')
+2020-10-21 13:04:42,735 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:04:42,736 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:04:42,736 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:04:42,736 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:04:42,736 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:04:42,736 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:04:42,736 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:04:42,736 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:04:42,737 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:04:42,739 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:04:42,739 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:04:42,739 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:04:42,739 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:04:42,739 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:04:42,739 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:07:32,512 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:07:32,513 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:07:32,513 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:07:32,513 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:07:32,513 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:07:32,513 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:07:32,514 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:07:32,514 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:07:32,518 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:07:32,527 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:07:32,527 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:07:32,527 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:07:37,038 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:07:38,351 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:07:38,351 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:12:04,256 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:12:04,257 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:12:04,257 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:12:04,257 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:12:04,257 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:12:04,257 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:12:04,257 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:12:04,257 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:12:04,258 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:12:04,260 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:12:04,260 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:12:04,260 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:12:04,260 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:12:04,260 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:12:04,260 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:12:45,245 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:12:45,245 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:12:45,246 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:12:45,246 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:12:45,246 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:12:45,246 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:12:45,247 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:12:45,247 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:12:45,250 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:12:45,259 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:12:45,260 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:12:45,260 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:12:45,260 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:12:45,260 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:12:45,261 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:13:09,176 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:13:09,176 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:13:09,176 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:13:09,176 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:13:09,176 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:13:09,176 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:13:09,176 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:13:09,176 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:13:09,178 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:13:09,179 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:13:09,179 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:13:09,180 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:13:09,180 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:13:09,180 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:13:09,180 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:13:58,993 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:13:58,994 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:13:58,994 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:13:58,994 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:13:58,994 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:13:58,994 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:13:58,995 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:13:58,995 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:13:58,999 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:13:59,008 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:13:59,009 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:13:59,009 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:13:59,009 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:13:59,009 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:13:59,009 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 13:15:32,420 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 13:15:32,421 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 13:15:32,421 - engine_logger:INFO - logger info level msg 
+2020-10-21 13:15:32,421 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 13:15:32,421 - engine_logger:ERROR - logger error level msg 
+2020-10-21 13:15:32,421 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 13:15:32,421 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 13:15:32,421 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 13:15:32,422 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 13:15:32,424 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 13:15:32,424 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 13:15:32,424 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 13:15:32,424 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 13:15:32,424 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 13:15:32,424 - engine_logger:INFO - Done init in MainProgram.

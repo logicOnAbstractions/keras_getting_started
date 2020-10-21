@@ -1,6 +1,0 @@
-{"predictions":
-[{"label": "Saluki", "probability": 0.49216321110725403},
-  {"label": "Afghan_hound", "probability": 0.28849270939826965},
-  {"label": "standard_poodle", "probability": 0.15885017812252045},
-  {"label": "Bedlington_terrier", "probability": 0.029528608545660973},
-  {"label": "whippet", "probability": 0.00908491387963295}], "success": "true"}

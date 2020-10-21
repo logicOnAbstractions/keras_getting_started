@@ -1,0 +1,6 @@
+flask
+requests
+gevent
+pillow
+Keras
+tensorflow

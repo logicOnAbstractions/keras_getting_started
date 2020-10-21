@@ -1,0 +1,12 @@
+about
+---------
+* machine learning on a rest api
+
+notes
+----------
+* their `run_keras_server.py` ==> `main.py`. we'll add good naming conventions
+* must install tensor flow, check requirements.txt
+
+ideas
+---------
+* could run on docker. scale up ML side on demand from api

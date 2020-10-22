@@ -7741,3 +7741,246 @@
         [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
 2020-10-22 12:25:57,403 - engine_logger:INFO - Model builts: 
 2020-10-22 12:26:00,195 - engine_logger:INFO - Finished training model. <tensorflow.python.keras.callbacks.History object at 0x7f66a8399850>
+2020-10-22 13:36:41,600 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-22 13:36:41,600 - engine_logger:DEBUG - logger debug level msg 
+2020-10-22 13:36:41,601 - engine_logger:INFO - logger info level msg 
+2020-10-22 13:36:41,601 - engine_logger:WARNING - logger warn level msg 
+2020-10-22 13:36:41,601 - engine_logger:ERROR - logger error level msg 
+2020-10-22 13:36:41,601 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-22 13:36:41,601 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-22 13:36:41,601 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-22 13:36:41,602 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-22 13:36:41,604 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-22 13:36:41,604 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-22 13:36:41,604 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-22 13:36:41,604 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-22 13:36:41,604 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-22 13:36:41,604 - engine_logger:INFO - Done init in MainProgram.
+2020-10-22 13:36:41,896 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-22 13:36:41,972 - engine_logger:INFO - Model builts: 
+2020-10-22 13:36:45,634 - engine_logger:INFO - Finished training model. <tensorflow.python.keras.callbacks.History object at 0x7f058433d0a0>
+2020-10-22 13:50:41,010 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-22 13:50:41,010 - engine_logger:DEBUG - logger debug level msg 
+2020-10-22 13:50:41,010 - engine_logger:INFO - logger info level msg 
+2020-10-22 13:50:41,010 - engine_logger:WARNING - logger warn level msg 
+2020-10-22 13:50:41,010 - engine_logger:ERROR - logger error level msg 
+2020-10-22 13:50:41,010 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-22 13:50:41,010 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-22 13:50:41,010 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-22 13:50:41,012 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-22 13:50:41,013 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-22 13:50:41,013 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-22 13:50:41,013 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-22 13:50:41,014 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-22 13:50:41,014 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-22 13:50:41,014 - engine_logger:INFO - Done init in MainProgram.
+2020-10-22 13:50:54,997 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-22 13:50:54,997 - engine_logger:DEBUG - logger debug level msg 
+2020-10-22 13:50:54,997 - engine_logger:INFO - logger info level msg 
+2020-10-22 13:50:54,997 - engine_logger:WARNING - logger warn level msg 
+2020-10-22 13:50:54,998 - engine_logger:ERROR - logger error level msg 
+2020-10-22 13:50:54,998 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-22 13:50:54,998 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-22 13:50:54,998 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-22 13:50:54,999 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-22 13:50:55,001 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-22 13:50:55,001 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-22 13:50:55,001 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-22 13:50:55,001 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-22 13:50:55,001 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-22 13:50:55,001 - engine_logger:INFO - Done init in MainProgram.
+2020-10-22 13:50:55,291 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-22 13:50:55,370 - engine_logger:INFO - Model builts: 
+2020-10-22 13:50:59,025 - engine_logger:INFO - Finished training model. <tensorflow.python.keras.callbacks.History object at 0x7fb1806560a0>

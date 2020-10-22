@@ -5,11 +5,13 @@ import keras
 from application.engine.preprocessing import ImagePreprocessor
 from keras.models import Model
 
-class Layer:
+class Architectures:
+    """ architectures describe a collection of layers that toghether define a neural netwk
+    """
     def __init__(self):
         """   """
 
-class DefaultLayers(Layer):
+class Default(Architectures):
     def __init__(self):
         """ """
         super().__init__()
@@ -28,25 +30,3 @@ class DefaultLayers(Layer):
         model = keras.Model(self.inputs, outputs)
         model.summary()
         return model
-
-    # def __call__(self):
-    #     processed_data = self.preprocessor(self.inputs)
-    #     lays        = layers.Conv2D(filters=32, kernel_size=(3,3), activation='relu')(processed_data)
-    #     lays        = layers.MaxPool2D(pool_size=(3,3))(lays)
-    #     lays        = layers.Conv2D(filters=32, kernel_size=(3,3), activation='relu')(lays)
-    #     lays        = layers.MaxPool2D(pool_size=(3,3))(lays)
-    #     lays        = layers.Conv2D(filters=32, kernel_size=(3,3), activation='relu')(lays)
-    #     lays        = layers.GlobalAveragePooling2D()(lays)
-    #     outputs     = self.outputs(lays)
-    #     return keras.Model(inputs=self.inputs, outputs=outputs)
-
-
-# # Build a simple model
-# inputs = keras.Input(shape=(28, 28))
-# x = layers.experimental.preprocessing.Rescaling(1.0 / 255)(inputs)
-# x = layers.Flatten()(x)
-# x = layers.Dense(128, activation="relu")(x)
-# x = layers.Dense(128, activation="relu")(x)
-# outputs = layers.Dense(10, activation="softmax")(x)
-# model = keras.Model(inputs, outputs)
-# model.summary()

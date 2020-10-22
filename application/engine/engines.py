@@ -4,7 +4,7 @@ from keras.applications import ResNet50
 from keras.preprocessing.image import img_to_array
 from keras.applications import imagenet_utils
 from application.engine.preprocessing import ImagePreprocessor
-from application.engine.layers_descriptions import DefaultLayers
+from application.engine.layers_descriptions import Default
 from dao import DiskDao
 import tensorflow as tf
 import numpy as np
@@ -36,7 +36,7 @@ class DigitsMNIST(Model):
     def __init__(self):
         """ """
         self.dao            = DiskDao()
-        self.layers         = DefaultLayers()
+        self.layers         = Default()
 
     def excute_all(self):
         """ launches all the steps necessary to preprocess data, make predictions, etc. """

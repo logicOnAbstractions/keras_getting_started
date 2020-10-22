@@ -46,15 +46,13 @@ class DigitsMNIST(Model):
         LOG.info(f"got data from keras: {data}")
         # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
         model = self.layers()
-        model.summary()
         LOG.info(f"Model builts: ")
 
         # at this point, we have built a model & we have fetched the data from keras's datasets.
-        model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
+        # model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
+        model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
 
-        train_dataset = tf.data.Dataset.from_tensor_slices((data["x_train"], data["y_train"]))
-
-        model.fit(train_dataset, batch_size=32, epochs=1, verbose=1)
+        model.fit(data["x_train"],data["y_train"])
         LOG.info(f"Finished training model. {model.history}")
 
 

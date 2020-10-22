@@ -49,15 +49,13 @@ class NormalizePreprocessor(Preprocessor):
 
 class ImagePreprocessor(Preprocessor):
 
-    def __init__(self, images=None, height=25, width=25, scale=1.0/255):
+    def __init__(self, images=None, height=28, width=28, scale=1.0/255):
         """ typically the last axis is the one we normalize over """
         super().__init__()
-        self.cropper            = CenterCrop(height=height, width=width)
-        self.scaler             = Rescaling(scale=scale)
+        # self.cropper            = CenterCrop(height=height, width=width)
+        # self.scaler             = Rescaling(scale=scale)
 
     def __call__(self, inputs):
         """ takes in data in list format & returns its encoded form  """
-        # return self.scaler(self.cropper(inputs))
-        x =  CenterCrop(height=150, width=150)(inputs)
-        x = Rescaling(scale=1.0/255)(x)
+        x = Rescaling(scale=1.0/255)(inputs)
         return x

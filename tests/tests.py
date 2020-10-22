@@ -5,7 +5,7 @@ from logger import get_root_logger
 from utils import *
 from main import MainProgram
 from classes.arg_parser import ArgParser
-
+import tensorflow.keras.datasets.mnist as mnist
 
 class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
 
@@ -16,7 +16,7 @@ class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
     def setUp(self):
         """ Runs after EACH test. Here we instantiate a new instance
          each test because we don't want the values modified by a previous test to influence the results of the next one"""
-        self.main_prog = MainProgram(arg_parser=argparser, logger=LOG)           # instantiated every single test, so new instances all the time
+        # self.main_prog = MainProgram(arg_parser=argparser, logger=LOG)           # instantiated every single test, so new instances all the time
 
     def tearDown(self):
         """
@@ -27,8 +27,10 @@ class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
     ################################################ tests
 
     def test_add_glider(self):
-        """ adds a glider to the Game"""
-        LOG.info("A dummy test thingy")
+        """ okay, so ultimately this returns the same thing that the mlxtend thing does """
+        mnist_data = mnist.load_data(path="tasdfasd.gz")
+        print(mnist_data)
+
 
 if __name__ == '__main__':
     import sys

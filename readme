@@ -6,10 +6,13 @@ A good "default" MainProgram. Essentially a wrapper around whatever application 
 usage
 ---------
 
-python main.py --configs [config filepath] --mode [one of mode defined in config file]
+python /server/server.py --configs [config filepath] --mode [one of mode defined in config file]
 
 Both are arguments are optional. By default, we load the "default" mode defined in `configs.yaml` which should be placed
 in the project's root directory.
+
+This commands starts the server, which has an instances of MainProgram for configs & details.
+Then one can use /server/comms.py to make a call. Eventually the full API/webpage I'll build
 
 NOTE: the default values are always set, regardless of the mode selected. What the other modes do is that they
 override any such values with whatever is put there. No need to fully re-defined all attribute if using

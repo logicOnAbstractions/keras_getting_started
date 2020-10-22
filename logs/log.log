@@ -256,3 +256,4700 @@
 2020-10-21 13:26:18,701 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
 2020-10-21 13:26:18,701 - engine_logger:INFO - Starting webserver... (not implemented)
 2020-10-21 13:26:18,701 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:21:39,379 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:21:39,379 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:21:39,379 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:21:39,380 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:21:39,380 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:21:39,380 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:21:39,380 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:21:39,380 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:21:39,381 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:21:39,383 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:21:39,383 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:21:39,383 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:21:39,383 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:21:39,383 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:21:39,383 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:22:38,671 - engine_logger:INFO - 
+2020-10-21 19:22:55,150 - engine_logger:INFO - 
+2020-10-21 19:23:04,992 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:23:04,992 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:23:04,992 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:23:04,992 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:23:04,992 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:23:04,992 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:23:04,993 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:23:04,993 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:23:04,994 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:23:04,995 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:23:04,995 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:23:04,996 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:23:04,996 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:23:04,996 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:23:04,996 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:23:06,511 - engine_logger:INFO - 
+2020-10-21 19:23:09,714 - engine_logger:INFO - got data from keras: ((array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([5, 0, 4, ..., 5, 6, 8], dtype=uint8)), (array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)))
+2020-10-21 19:23:09,829 - engine_logger:INFO - Model builts: None
+2020-10-21 19:23:30,713 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:23:30,713 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:23:30,714 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:23:30,714 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:23:30,714 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:23:30,714 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:23:30,715 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:23:30,715 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:23:30,718 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:23:30,726 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:23:30,726 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:23:30,726 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:23:30,726 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:23:30,726 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:23:30,726 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:23:33,637 - engine_logger:INFO - 
+2020-10-21 19:23:38,770 - engine_logger:INFO - got data from keras: ((array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([5, 0, 4, ..., 5, 6, 8], dtype=uint8)), (array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)))
+2020-10-21 19:23:39,146 - engine_logger:INFO - Model builts: None
+2020-10-21 19:23:46,661 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:23:46,661 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:23:46,661 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:23:46,661 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:23:46,662 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:23:46,662 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:23:46,662 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:23:46,662 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:23:46,665 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:23:46,673 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:23:46,673 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:23:46,673 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:23:46,674 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:23:46,674 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:23:46,674 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:23:47,796 - engine_logger:INFO - 
+2020-10-21 19:23:48,132 - engine_logger:INFO - got data from keras: ((array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([5, 0, 4, ..., 5, 6, 8], dtype=uint8)), (array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)))
+2020-10-21 19:23:48,358 - engine_logger:INFO - Model builts: None
+2020-10-21 19:26:22,494 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:26:22,495 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:26:22,495 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:26:22,495 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:26:22,495 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:26:22,496 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:26:22,496 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:26:22,496 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:26:22,500 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:26:22,509 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:26:22,509 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:26:22,509 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:26:22,510 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:26:22,510 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:26:22,510 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:26:23,592 - engine_logger:INFO - 
+2020-10-21 19:40:13,705 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:40:13,705 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:40:13,705 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:40:13,705 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:40:13,705 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:40:13,705 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:40:13,705 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:40:13,705 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:40:13,706 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:40:13,708 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:40:13,708 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:40:13,708 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:40:13,709 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:40:13,709 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:40:13,709 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:40:20,651 - engine_logger:INFO - 
+2020-10-21 19:40:20,946 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 19:40:21,060 - engine_logger:INFO - Model builts: None
+2020-10-21 19:40:22,453 - engine_logger:INFO - 
+2020-10-21 19:40:22,741 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 19:40:22,798 - engine_logger:INFO - Model builts: None
+2020-10-21 19:41:26,445 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 19:41:26,445 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 19:41:26,445 - engine_logger:INFO - logger info level msg 
+2020-10-21 19:41:26,445 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 19:41:26,445 - engine_logger:ERROR - logger error level msg 
+2020-10-21 19:41:26,445 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 19:41:26,445 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 19:41:26,445 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 19:41:26,446 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 19:41:26,448 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 19:41:26,448 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 19:41:26,448 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 19:41:26,448 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 19:41:26,448 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 19:41:26,448 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 19:41:37,388 - engine_logger:INFO - 
+2020-10-21 19:41:37,680 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 19:41:37,789 - engine_logger:INFO - Model builts: None
+2020-10-21 22:06:46,275 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:06:46,275 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:06:46,275 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:06:46,276 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:06:46,276 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:06:46,276 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:06:46,276 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:06:46,276 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:06:46,280 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:06:46,290 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:06:46,290 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:06:46,290 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:06:46,291 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:06:46,291 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:06:46,291 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:06:49,844 - engine_logger:INFO - 
+2020-10-21 22:09:34,049 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:09:34,049 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:09:34,049 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:09:34,049 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:09:34,049 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:09:34,049 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:09:34,049 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:09:34,049 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:09:34,050 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:09:34,052 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:09:34,052 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:09:34,052 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:09:34,052 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:09:34,052 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:09:34,053 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:09:40,281 - engine_logger:INFO - 
+2020-10-21 22:09:40,575 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:12:08,365 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:12:08,365 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:12:08,365 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:12:08,365 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:12:08,365 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:12:08,365 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:12:08,365 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:12:08,366 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:12:08,367 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:12:08,368 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:12:08,369 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:12:08,369 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:12:08,369 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:12:08,369 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:12:08,369 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:12:10,527 - engine_logger:INFO - 
+2020-10-21 22:12:10,820 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:12:10,930 - engine_logger:INFO - Model builts: None
+2020-10-21 22:13:29,060 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:13:29,060 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:13:29,060 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:13:29,060 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:13:29,060 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:13:29,060 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:13:29,060 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:13:29,061 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:13:29,062 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:13:29,063 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:13:29,064 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:13:29,064 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:13:29,064 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:13:29,064 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:13:29,064 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:13:33,707 - engine_logger:INFO - 
+2020-10-21 22:13:34,004 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:13:34,111 - engine_logger:INFO - Model builts: None
+2020-10-21 22:16:37,646 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:16:37,646 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:16:37,647 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:16:37,647 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:16:37,647 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:16:37,647 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:16:37,647 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:16:37,647 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:16:37,648 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:16:37,650 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:16:37,650 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:16:37,650 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:16:37,650 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:16:37,650 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:16:37,650 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:16:38,227 - engine_logger:INFO - 
+2020-10-21 22:16:38,521 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:16:38,631 - engine_logger:INFO - Model builts: None
+2020-10-21 22:17:12,682 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:17:12,682 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:17:12,682 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:17:12,682 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:17:12,682 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:17:12,682 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:17:12,682 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:17:12,682 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:17:12,683 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:17:12,685 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:17:12,685 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:17:12,685 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:17:12,685 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:17:12,686 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:17:12,686 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:17:14,384 - engine_logger:INFO - 
+2020-10-21 22:17:14,673 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:17:14,783 - engine_logger:INFO - Model builts: 
+2020-10-21 22:23:32,775 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:23:32,775 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:23:32,775 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:23:32,776 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:23:32,776 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:23:32,776 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:23:32,776 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:23:32,776 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:23:32,777 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:23:32,779 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:23:32,779 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:23:32,779 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:23:32,779 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:23:32,779 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:23:32,779 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:23:36,877 - engine_logger:INFO - 
+2020-10-21 22:23:37,170 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:23:37,282 - engine_logger:INFO - Model builts: 
+2020-10-21 22:25:32,478 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:25:32,478 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:25:32,478 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:25:32,478 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:25:32,478 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:25:32,478 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:25:32,478 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:25:32,478 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:25:32,479 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:25:32,481 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:25:32,481 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:25:32,481 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:25:32,482 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:25:32,482 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:25:32,482 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:25:33,643 - engine_logger:INFO - 
+2020-10-21 22:25:33,937 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:25:34,047 - engine_logger:INFO - Model builts: 
+2020-10-21 22:25:59,673 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:25:59,673 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:25:59,673 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:25:59,674 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:25:59,674 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:25:59,674 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:25:59,674 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:25:59,675 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:25:59,678 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:25:59,687 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:25:59,688 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:25:59,688 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:25:59,688 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:25:59,688 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:25:59,688 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:25:59,997 - engine_logger:INFO - 
+2020-10-21 22:26:10,831 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:26:10,831 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:26:10,831 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:26:10,831 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:26:10,832 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:26:10,832 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:26:10,832 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:26:10,832 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:26:10,835 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:26:10,843 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:26:10,843 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:26:10,844 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:26:10,844 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:26:10,844 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:26:10,844 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:26:11,801 - engine_logger:INFO - 
+2020-10-21 22:26:12,140 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:26:12,367 - engine_logger:INFO - Model builts: 
+2020-10-21 22:26:35,375 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:26:35,376 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:26:35,376 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:26:35,376 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:26:35,376 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:26:35,376 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:26:35,376 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:26:35,376 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:26:35,377 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:26:35,379 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:26:35,379 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:26:35,379 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:26:35,379 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:26:35,379 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:26:35,379 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:26:36,377 - engine_logger:INFO - 
+2020-10-21 22:26:36,670 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:26:36,778 - engine_logger:INFO - Model builts: 
+2020-10-21 22:29:20,541 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:29:20,541 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:29:20,541 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:29:20,541 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:29:20,541 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:29:20,541 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:29:20,541 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:29:20,541 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:29:20,542 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:29:20,544 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:29:20,544 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:29:20,544 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:29:20,544 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:29:20,544 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:29:20,544 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:29:23,922 - engine_logger:INFO - 
+2020-10-21 22:29:24,218 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:29:24,329 - engine_logger:INFO - Model builts: 
+2020-10-21 22:30:06,834 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:30:06,834 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:30:06,835 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:30:06,835 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:30:06,835 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:30:06,835 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:30:06,835 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:30:06,835 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:30:06,836 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:30:06,838 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:30:06,838 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:30:06,838 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:30:06,838 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:30:06,838 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:30:06,838 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:30:08,516 - engine_logger:INFO - 
+2020-10-21 22:30:08,810 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:30:08,923 - engine_logger:INFO - Model builts: 
+2020-10-21 22:30:23,135 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:30:23,135 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:30:23,135 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:30:23,135 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:30:23,135 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:30:23,135 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:30:23,135 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:30:23,135 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:30:23,136 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:30:23,138 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:30:23,138 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:30:23,138 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:30:23,138 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:30:23,138 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:30:23,138 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:30:25,255 - engine_logger:INFO - 
+2020-10-21 22:30:25,544 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:32:29,777 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:32:29,777 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:32:29,777 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:32:29,777 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:32:29,778 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:32:29,778 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:32:29,778 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:32:29,778 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:32:29,779 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:32:29,781 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:32:29,781 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:32:29,781 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:32:29,781 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:32:29,781 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:32:29,781 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:32:30,395 - engine_logger:INFO - 
+2020-10-21 22:32:30,692 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:32:30,807 - engine_logger:INFO - Model builts: 
+2020-10-21 22:47:19,568 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:47:19,568 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:47:19,568 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:47:19,569 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:47:19,569 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:47:19,569 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:47:19,569 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:47:19,569 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:47:19,570 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:47:19,572 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:47:19,572 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:47:19,572 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:47:19,572 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:47:19,572 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:47:19,572 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:47:20,768 - engine_logger:INFO - 
+2020-10-21 22:47:21,059 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:48:08,676 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:48:08,677 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:48:08,677 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:48:08,677 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:48:08,677 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:48:08,677 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:48:08,678 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:48:08,678 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:48:08,682 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:48:08,691 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:48:08,691 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:48:08,691 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:48:08,691 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:48:08,692 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:48:08,692 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:49:02,283 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:49:02,283 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:49:02,283 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:49:02,283 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:49:02,283 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:49:02,283 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:49:02,283 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:49:02,284 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:49:02,285 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:49:02,286 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:49:02,286 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:49:02,286 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:49:02,287 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:49:02,287 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:49:02,287 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:49:02,576 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:49:59,423 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:49:59,423 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:49:59,424 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:49:59,424 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:49:59,424 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:49:59,424 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:49:59,425 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:49:59,425 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:49:59,428 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:49:59,438 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:49:59,438 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:49:59,438 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:49:59,438 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:49:59,439 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:49:59,439 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:49:59,772 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:50:41,686 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:50:41,687 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:50:41,687 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:50:41,687 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:50:41,687 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:50:41,688 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:50:41,688 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:50:41,688 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:50:41,692 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:50:41,701 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:50:41,701 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:50:41,701 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:50:41,702 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:50:41,702 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:50:41,702 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:50:42,032 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:51:36,809 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:51:36,810 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:51:36,810 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:51:36,810 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:51:36,810 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:51:36,811 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:51:36,811 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:51:36,811 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:51:36,815 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:51:36,824 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:51:36,824 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:51:36,825 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:51:36,825 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:51:36,825 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:51:36,825 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:51:37,164 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:52:19,623 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:52:19,623 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:52:19,623 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:52:19,623 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:52:19,623 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:52:19,623 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:52:19,623 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:52:19,623 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:52:19,624 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:52:19,626 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:52:19,626 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:52:19,626 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:52:19,626 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:52:19,626 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:52:19,626 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:52:19,916 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:53:16,233 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:53:16,233 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:53:16,233 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:53:16,234 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:53:16,234 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:53:16,234 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:53:16,234 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:53:16,234 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:53:16,235 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:53:16,237 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:53:16,237 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:53:16,237 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:53:16,237 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:53:16,237 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:53:16,237 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:53:16,526 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:57:23,499 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:57:23,500 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:57:23,500 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:57:23,500 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:57:23,500 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:57:23,500 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:57:23,500 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:57:23,500 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:57:23,501 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:57:23,503 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:57:23,503 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:57:23,503 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:57:23,503 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:57:23,503 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:57:23,503 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:57:23,795 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:57:45,228 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:57:45,228 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:57:45,228 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:57:45,228 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:57:45,228 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:57:45,228 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:57:45,228 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:57:45,228 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:57:45,229 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:57:45,231 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:57:45,231 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:57:45,231 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:57:45,231 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:57:45,231 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:57:45,231 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:57:45,520 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 22:58:23,290 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 22:58:23,290 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 22:58:23,290 - engine_logger:INFO - logger info level msg 
+2020-10-21 22:58:23,290 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 22:58:23,290 - engine_logger:ERROR - logger error level msg 
+2020-10-21 22:58:23,291 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 22:58:23,291 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 22:58:23,291 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 22:58:23,292 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 22:58:23,294 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 22:58:23,294 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 22:58:23,294 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 22:58:23,294 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 22:58:23,294 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 22:58:23,294 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 22:58:23,584 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:03:36,033 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:03:36,034 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:03:36,034 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:03:36,034 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:03:36,034 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:03:36,034 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:03:36,034 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:03:36,034 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:03:36,035 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:03:36,037 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:03:36,037 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:03:36,037 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:03:36,037 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:03:36,037 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:03:36,037 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:03:36,328 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:14:45,611 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:14:45,611 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:14:45,611 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:14:45,611 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:14:45,611 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:14:45,611 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:14:45,611 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:14:45,611 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:14:45,612 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:14:45,614 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:14:45,614 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:14:45,614 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:14:45,614 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:14:45,614 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:14:45,614 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:14:45,905 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:16:33,800 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:16:33,801 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:16:33,801 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:16:33,801 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:16:33,801 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:16:33,802 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:16:33,802 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:16:33,802 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:16:33,806 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:16:33,815 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:16:33,815 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:16:33,815 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:16:33,816 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:16:33,816 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:16:33,816 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:16:34,157 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:17:32,182 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:17:32,182 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:17:32,182 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:17:32,182 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:17:32,182 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:17:32,182 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:17:32,182 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:17:32,182 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:17:32,183 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:17:32,185 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:17:32,185 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:17:32,185 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:17:32,185 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:17:32,185 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:17:32,186 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:17:32,476 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:17:58,220 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:17:58,221 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:17:58,221 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:17:58,221 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:17:58,221 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:17:58,222 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:17:58,222 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:17:58,222 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:17:58,226 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:17:58,235 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:17:58,235 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:17:58,235 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:17:58,235 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:17:58,236 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:17:58,236 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:17:58,565 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:18:27,410 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:18:27,410 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:18:27,410 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:18:27,410 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:18:27,410 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:18:27,410 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:18:27,411 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:18:27,411 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:18:27,412 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:18:27,413 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:18:27,413 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:18:27,414 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:18:27,414 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:18:27,414 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:18:27,414 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:18:27,706 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:18:45,329 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:18:45,329 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:18:45,329 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:18:45,329 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:18:45,329 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:18:45,329 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:18:45,329 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:18:45,329 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:18:45,330 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:18:45,332 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:18:45,332 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:18:45,332 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:18:45,332 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:18:45,332 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:18:45,332 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:18:45,626 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:24:39,683 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:24:39,683 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:24:39,683 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:24:39,683 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:24:39,683 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:24:39,683 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:24:39,683 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:24:39,683 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:24:39,684 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:24:39,686 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:24:39,686 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:24:39,686 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:24:39,687 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:24:39,687 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:24:39,687 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:24:39,975 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:25:25,597 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:25:25,597 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:25:25,597 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:25:25,597 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:25:25,597 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:25:25,597 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:25:25,597 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:25:25,597 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:25:25,598 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:25:25,600 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:25:25,600 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:25:25,600 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:25:25,600 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:25:25,600 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:25:25,600 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:25:25,889 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:25:26,001 - engine_logger:INFO - Model builts: 
+2020-10-21 23:25:57,171 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:25:57,171 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:25:57,171 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:25:57,171 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:25:57,171 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:25:57,171 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:25:57,171 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:25:57,171 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:25:57,172 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:25:57,174 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:25:57,174 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:25:57,174 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:25:57,174 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:25:57,174 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:25:57,174 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:25:57,464 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:25:57,572 - engine_logger:INFO - Model builts: 
+2020-10-21 23:28:28,230 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:28:28,230 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:28:28,230 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:28:28,230 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:28:28,230 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:28:28,230 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:28:28,230 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:28:28,230 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:28:28,231 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:28:28,233 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:28:28,233 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:28:28,233 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:28:28,234 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:28:28,234 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:28:28,234 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:28:28,524 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:28:40,188 - engine_logger:INFO - Initated logger in MainProgram 
+2020-10-21 23:28:40,188 - engine_logger:DEBUG - logger debug level msg 
+2020-10-21 23:28:40,188 - engine_logger:INFO - logger info level msg 
+2020-10-21 23:28:40,189 - engine_logger:WARNING - logger warn level msg 
+2020-10-21 23:28:40,189 - engine_logger:ERROR - logger error level msg 
+2020-10-21 23:28:40,189 - engine_logger:CRITICAL - logger critical level msg 
+2020-10-21 23:28:40,189 - engine_logger:INFO - Parsing args in ArgParser
+2020-10-21 23:28:40,189 - engine_logger:INFO - ArgParser - parsing commandline args... 
+2020-10-21 23:28:40,190 - engine_logger:INFO - Args from cmdline: Namespace(configs_file='configs.yaml', mode='foo_mode')
+2020-10-21 23:28:40,192 - engine_logger:INFO - Loaded yaml configs: {'default': {'main_program': {'foo': 42, 'undeclared_attribute': 'ignored'}}, 'foo_mode': {'main_program': {'foo': 'foo'}}, 'bar_mode': {'main_program': {'foo': 'bar'}}}
+2020-10-21 23:28:40,192 - engine_logger:INFO - Attribute foo has been set to 42
+2020-10-21 23:28:40,192 - engine_logger:WARNING - Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): undeclared_attribute, ignored
+2020-10-21 23:28:40,192 - engine_logger:INFO - Attribute foo has been set to foo, overriding default values if any.
+2020-10-21 23:28:40,192 - engine_logger:INFO - Starting webserver... (not implemented)
+2020-10-21 23:28:40,192 - engine_logger:INFO - Done init in MainProgram.
+2020-10-21 23:28:40,481 - engine_logger:INFO - got data from keras: {'x_train': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_train': array([5, 0, 4, ..., 5, 6, 8], dtype=uint8), 'x_test': array([[[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       ...,
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]],
+
+       [[0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        ...,
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0],
+        [0, 0, 0, ..., 0, 0, 0]]], dtype=uint8), 'y_test': array([7, 2, 1, ..., 4, 5, 6], dtype=uint8)}
+2020-10-21 23:28:40,586 - engine_logger:INFO - Model builts: 

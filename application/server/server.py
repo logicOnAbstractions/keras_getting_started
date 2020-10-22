@@ -5,6 +5,11 @@ from PIL import Image                       # consider replacing pillow by sciki
 from flask import Flask, request, jsonify
 import io
 from main import MainProgram
+from utils import *
+from logger import get_root_logger
+
+LOG = get_root_logger(BASE_LOGGER_NAME)
+
 
 app             = Flask(__name__)
 model           = None
@@ -14,8 +19,19 @@ mp              = None
 ############## api endpoints ##############
 @app.route("/")
 def home():
+    LOG.info(f"/home ping... ")
     return "Welcome to the ML api (Keras)"
 
+@app.route("/runmodel")
+def run_model():
+    LOG.info(f"")
+    try:
+        value = request.args.get("model")
+    except Exception as ex:
+        LOG.error(f"Failed to get model argument: {request.args} (expected model key)")
+
+    if value == "MNIST":
+        mp.execute_all()
 
 @app.route("/predict", methods=["POST"])
 def predict():

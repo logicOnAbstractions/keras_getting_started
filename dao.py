@@ -4,6 +4,8 @@ from utils import *
 from logger import get_root_logger
 import json
 import yaml
+import tensorflow.keras.datasets.mnist as mnist
+
 
 class Dao:
     """ super class for accessors (file, nwtk etc.)"""
@@ -21,3 +23,10 @@ class DiskDao(Dao):
             configs = yaml.load(configs, yaml.FullLoader)
         self.LOG.info(f"Loaded yaml configs: {configs}")
         return configs
+
+    def get_mnist_dataset(self):
+        """ just to play around """
+        train, test = mnist.load_data(path="mnist.npz")
+        x_train, y_train = train
+        x_test, y_test  = test
+        return {"x_train":x_train, "y_train":y_train, "x_test":x_test, "y_test":y_test}

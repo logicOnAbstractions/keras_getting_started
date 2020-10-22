@@ -3,7 +3,15 @@
 from keras.applications import ResNet50
 from keras.preprocessing.image import img_to_array
 from keras.applications import imagenet_utils
+from application.engine.preprocessing import ImagePreprocessor
+from application.engine.layers_descriptions import DefaultLayers
+from dao import DiskDao
+import tensorflow as tf
 import numpy as np
+from utils import *
+from logger import get_root_logger
+
+LOG = get_root_logger(BASE_LOGGER_NAME)
 
 class Model:
     """ parent class, meant to be subclasses by specific implt. models
@@ -11,6 +19,7 @@ class Model:
     """
     def __init__(self):
         """ """
+        self.preprocessor = None
 
     def predict_single(self, data):
         """ makes a prediction. subclasses define what is predicted """
@@ -19,6 +28,35 @@ class Model:
     def load_model(self):
         """ Loads the appropriate model from keras """
         raise NotImplemented
+
+
+class DigitsMNIST(Model):
+    """ sample model that trains to recognize the MNIST digits classic example """
+
+    def __init__(self):
+        """ """
+        self.dao            = DiskDao()
+        self.layers         = DefaultLayers()
+
+    def excute_all(self):
+        """ launches all the steps necessary to preprocess data, make predictions, etc. """
+
+        # proprocess the data
+        data = self.dao.get_mnist_dataset()         # TODO: currently returns none
+        LOG.info(f"got data from keras: {data}")
+        # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
+        model = self.layers()
+        model.summary()
+        LOG.info(f"Model builts: ")
+
+        # at this point, we have built a model & we have fetched the data from keras's datasets.
+        model.compile(optimizer='rmsprop', loss='categorical_crossentropy')
+
+        train_dataset = tf.data.Dataset.from_tensor_slices((data["x_train"], data["y_train"]))
+
+        model.fit(train_dataset, batch_size=32, epochs=1, verbose=1)
+        LOG.info(f"Finished training model. {model.history}")
+
 
 class DogBreedModel(Model):
     """ takes in a dog image, & predicts what breed this is """

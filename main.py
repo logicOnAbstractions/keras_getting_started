@@ -5,7 +5,7 @@ from utils import *
 from classes.arg_parser import ArgParser
 from logger import get_root_logger
 from dao import DiskDao
-from application.engine.engines import DogBreedModel
+from application.engine.engines import DogBreedModel, DigitsMNIST
 
 class MainProgram:
     """ the runner of the simulation
@@ -15,7 +15,7 @@ class MainProgram:
         # those arguments may be set from the config file
         self.foo            = None
 
-        self.model          = DogBreedModel()
+        self.model          = DigitsMNIST()
         self.dao            = DiskDao()
         self.LOG            = logger if logger else self.get_logger()
         self.arg_parser     = arg_parser if arg_parser else ArgParser(self.LOG)
@@ -24,6 +24,9 @@ class MainProgram:
         self.start_webserver()
 
         self.LOG.info(f"Done init in {self.__class__.__name__}.")
+
+        # auto start
+        self.execute_all()
 
     def init_args(self):
         """ parses whatever args we have & sets up this class accordingly
@@ -54,6 +57,9 @@ class MainProgram:
     def predict(self, data):
         """ abstration layer. we feed that data to the model we have set to make a prediction """
         return self.model.predict(data)
+
+    def execute_all(self):
+        return self.model.excute_all()
 
     @property
     def configs_default_mp(self):

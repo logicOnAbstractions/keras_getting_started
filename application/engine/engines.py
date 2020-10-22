@@ -42,6 +42,7 @@ class DigitsMNIST(Model):
         super().__init__(configs)
         self.dao            = DiskDao()
         self.layers         = Default()
+        self.configs        = configs
 
     def excute_all(self):
         """ launches all the steps necessary to preprocess data, make predictions, etc. """
@@ -50,7 +51,7 @@ class DigitsMNIST(Model):
         data = self.dao.get_mnist_dataset()         # TODO: currently returns none
         LOG.info(f"got data from keras: {data}")
         # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
-        model = self.layers()
+        model = self.layers(configs=self.configs)
         LOG.info(f"Model builts: ")
 
         # at this point, we have built a model & we have fetched the data from keras's datasets.

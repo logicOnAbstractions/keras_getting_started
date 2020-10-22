@@ -13,13 +13,11 @@ class MainProgram:
      """
     def __init__(self, arg_parser=None, logger=None):
         # those arguments may be set from the config file
-        self.foo            = None
-
-        self.model          = DigitsMNIST()
         self.dao            = DiskDao()
         self.LOG            = logger if logger else self.get_logger()
         self.arg_parser     = arg_parser if arg_parser else ArgParser(self.LOG)
         self.init_args()
+        self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
 
         self.start_webserver()
 

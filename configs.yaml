@@ -4,6 +4,23 @@ default:
   main_program:
     foo: 42
     undeclared_attribute: "ignored"
+  architecture:
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    inputs:
+      layer_type: Input
+      shape: [28,28]
+    outputs:
+      layer_type: Dense
+      units: 10
+    layers:
+      - layer_type: Flatten
+      - layer_type: Dense
+        units: 128
+        activation: relu
+      - layer_type: Dense
+        units: 128
+        activation: relu
+
 foo_mode:
   main_program:
     foo: foo

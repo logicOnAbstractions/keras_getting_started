@@ -10,6 +10,7 @@ import tensorflow as tf
 import numpy as np
 from utils import *
 from logger import get_root_logger
+import yaml
 
 LOG = get_root_logger(BASE_LOGGER_NAME)
 
@@ -17,9 +18,10 @@ class Model:
     """ parent class, meant to be subclasses by specific implt. models
         will allow flexibility in using various models to make predictions
     """
-    def __init__(self):
+    def __init__(self, configs):
         """ """
-        self.preprocessor = None
+        self.configs        = configs
+        self.preprocessor   = None
 
     def predict_single(self, data):
         """ makes a prediction. subclasses define what is predicted """
@@ -28,13 +30,16 @@ class Model:
     def load_model(self):
         """ Loads the appropriate model from keras """
         raise NotImplemented
+    def instantiante_layers(self):
+        """ uses content of self.configs to instantiate all of our model """
 
 
 class DigitsMNIST(Model):
     """ sample model that trains to recognize the MNIST digits classic example """
 
-    def __init__(self):
+    def __init__(self, configs):
         """ """
+        super().__init__(configs)
         self.dao            = DiskDao()
         self.layers         = Default()
 
@@ -54,6 +59,12 @@ class DigitsMNIST(Model):
 
         model.fit(data["x_train"],data["y_train"])
         LOG.info(f"Finished training model. {model.history}")
+
+        LOG.info(f"Now testing yaml reprs of archiectures ")
+        yaml_serialized = self.layers.to_yaml()
+
+        with open("test.yaml", 'w') as fy:
+            yaml.dump(yaml_serialized, fy)
 
 
 class DogBreedModel(Model):

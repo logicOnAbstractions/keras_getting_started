@@ -12,6 +12,7 @@ default:
     outputs:
       layer_type: Dense
       units: 10
+      activation: softmax
     layers:
       - layer_type: Flatten
       - layer_type: Dense

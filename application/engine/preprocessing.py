@@ -49,7 +49,7 @@ class NormalizePreprocessor(Preprocessor):
 
 class ImagePreprocessor(Preprocessor):
 
-    def __init__(self, images=None, height=28, width=28, scale=1.0/255):
+    def __init__(self):
         """ typically the last axis is the one we normalize over """
         super().__init__()
         # self.cropper            = CenterCrop(height=height, width=width)

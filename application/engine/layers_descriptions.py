@@ -6,20 +6,10 @@ from application.engine.preprocessing import ImagePreprocessor
 from keras.models import Model
 import yaml
 
-class MyInput:
-    def __init__(self, *args, **kwargs):
-        self.input = keras.Input(*args, **kwargs)
-
-    def to_yaml(self):
-        return self.input.shape
-    #
-    # def __call__(self, *args, **kwargs):
-    #     return self.input(*args, **kwargs)
-
 class Architectures:
     """ architectures describe a collection of layers that toghether define a neural netwk
     """
-    def __init__(self,inputs, outputs ):
+    def __init__(self, configs):
         """
         :param inputs: keras.Input() layer
         :param outputs: keras.layers.Dense() layer
@@ -27,8 +17,12 @@ class Architectures:
         the specific architectures should specify a default that makes sense for them. e.g. the MNIST model
         has defaults that fits the standard MNISt data format for example
         """
-        self.inputs = inputs
-        self.outputs = outputs
+        self.configs        = configs
+        self.mode           = "default"
+        self.layer_types    = {"Dense":keras.layers.Dense,
+                                "Flatten":keras.layers.Flatten,
+                                "Input":keras.Input}
+        self.preprocessor   = None
 
     def to_yaml(self):
         """ saves the object (recursively) into yaml repr. we can then re-hydrate that
@@ -41,24 +35,41 @@ class Architectures:
             else:
                 d[k] = v
 
+    def _build_model(self):
+        inputs_desc     = self.configs["inputs"]
+        outputs_desc    = self.configs["outputs"]
+        layers_desc     = self.configs["layers"]
+
+        type            = inputs_desc.pop('layer_type', None)
+        input_lay       = self.layer_types[type](**inputs_desc)
+        type            = outputs_desc.pop('layer_type', None)
+        output_lay      = self.layer_types[type](**outputs_desc)
+
+        # now iterate on layers
+        middle_layers   = []
+        for layer in layers_desc:
+            type            = layer.pop('layer_type', None)
+            middle_layers.append(self.layer_types[type](**layer))
+
+        # we have all layers objs - now build the full model into a single obj.
+        x = self.preprocessor(input_lay)
+        for l in middle_layers:
+            x = l(x)
+
+        # all the layers are there - now build the model itself with in, outs
+        model = keras.Model(input_lay ,output_lay(x))
+        return  model
+
+    @property
+    def inputs(self):
+        return self.configs[self.mode]["architecture"]["inputs"]
 
 class Default(Architectures):
-    # def __init__(self, inputs=keras.Input(shape=(28, 28)), outputs=layers.Dense(10, activation="softmax")):
-    def __init__(self, inputs=keras.Input(shape=(28, 28)), outputs=layers.Dense(units=10, activation="softmax")):
+    def __init__(self, configs):
         """ """
-        super().__init__(inputs, outputs)
-        self.num_class = 10
-        self.inputs = inputs
-        # self.outputs = layers.Dense(self.num_class, activation="softmax")
+        super().__init__(configs)
         self.preprocessor = ImagePreprocessor()
-        self.outputs = outputs
 
-    def __call__(self, configs):
+    def __call__(self):
         """ receives the configs loaded from configs.yaml that describe each layers """
-        x = self.preprocessor(self.inputs)
-        x = layers.Flatten()(x)
-        x = layers.Dense(128, activation="relu")(x)
-        x = layers.Dense(128, activation="relu")(x)
-        model = keras.Model(self.inputs, self.outputs(x))
-        model.summary()
-        return model
+        return self._build_model()

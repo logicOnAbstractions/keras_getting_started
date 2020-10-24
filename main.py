@@ -18,13 +18,8 @@ class MainProgram:
         self.arg_parser     = arg_parser if arg_parser else ArgParser(self.LOG)
         self.init_args()
         self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
-
-        self.start_webserver()
-
         self.LOG.info(f"Done init in {self.__class__.__name__}.")
-
-        # auto start
-        self.execute_all()
+        self.execute()
 
     def init_args(self):
         """ parses whatever args we have & sets up this class accordingly
@@ -33,14 +28,16 @@ class MainProgram:
         """
         self.arg_parser.parse_cmdline()
         self.full_configs = self.arg_parser.parse_yaml_configs()
-        for k, v in self.configs_default_mp.items():
-            if hasattr(self, k):
-                setattr(self, k, v)
-                self.LOG.info(f"Attribute {k} has been set to {getattr(self, k)}")
-            else:
-                self.LOG.warning(f"Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): {k}, {v}")
 
-        if self.mode != "default":                  # then those will complement/override the default values
+        if self.configs_default_mp:
+            for k, v in self.configs_default_mp.items():
+                if hasattr(self, k):
+                    setattr(self, k, v)
+                    self.LOG.info(f"Attribute {k} has been set to {getattr(self, k)}")
+                else:
+                    self.LOG.warning(f"Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): {k}, {v}")
+
+        if self.mode != "default" and self.full_configs[self.mode]["main_program"]:                  # then those will complement/override the default values
             for k, v in self.full_configs[self.mode]["main_program"].items():
                 if hasattr(self, k):
                     setattr(self, k, v)
@@ -48,16 +45,12 @@ class MainProgram:
                 else:
                     self.LOG.warning(f"Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): {k}, {v}")
 
-    def start_webserver(self):
-        """ starts the webserver for the flask api """
-        self.LOG.info(f"Starting webserver... (not implemented)")
 
-    def predict(self, data):
-        """ abstration layer. we feed that data to the model we have set to make a prediction """
-        return self.model.predict(data)
+    def execute(self):
 
-    def execute_all(self):
-        return self.model.excute_all()
+        # train the model
+        self.model.train()
+
 
     @property
     def configs_default_mp(self):

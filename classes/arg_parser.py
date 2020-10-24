@@ -28,8 +28,8 @@ class ArgParser:
         parser = argparse.ArgumentParser(description="YOUR PROGRAM NAME")
 
         # assign args to vars ("dest=...")
-        parser.add_argument('--configs', dest='configs_file', required=False, type=str, default="configs.yaml")
-        parser.add_argument('--mode', dest='mode', required=False, type=str, default="default")                 # just use default configs by default
+        parser.add_argument('--configsfile', dest='configs_file', required=False, type=str, default="configs.yaml")
+        parser.add_argument('--configsmode', dest='mode', required=False, type=str, default="default")                 # just use default configs by default
 
         # awesome. we now get a mapping of args according to what we wrote above
         self.args = parser.parse_args()

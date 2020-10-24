@@ -11,11 +11,7 @@ class Architectures:
     """
     def __init__(self, configs):
         """
-        :param inputs: keras.Input() layer
-        :param outputs: keras.layers.Dense() layer
-
-        the specific architectures should specify a default that makes sense for them. e.g. the MNIST model
-        has defaults that fits the standard MNISt data format for example
+        :param configs:
         """
         self.configs        = configs
         self.mode           = "default"
@@ -24,18 +20,16 @@ class Architectures:
                                 "Input":keras.Input}
         self.preprocessor   = None
 
-    def to_yaml(self):
-        """ saves the object (recursively) into yaml repr. we can then re-hydrate that
-        yaml into an object, compare/save layers/architectures, etc. """
-        d = {}
-        for k,v in self.__dict__.items():
-            has_todict = getattr(v, "to_dict", None)
-            if has_todict:
-                d[k] = v.to_dict()
-            else:
-                d[k] = v
-
     def _build_model(self):
+        """ to build a model programatically, we need:
+            * a description of an input layer (to match incoming data format)
+            * description of the output layers
+            * all middle layers descriptions.
+
+            The algo creates input, output layers separately. Just seem convenient for debugging/logic of how a ntwk is structured.
+            The middle layers are iterated over
+
+            """
         inputs_desc     = self.configs["inputs"]
         outputs_desc    = self.configs["outputs"]
         layers_desc     = self.configs["layers"]

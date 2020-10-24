@@ -31,7 +31,7 @@ def run_model():
         LOG.error(f"Failed to get model argument: {request.args} (expected model key)")
 
     if value == "MNIST":
-        mp.execute_all()
+        mp.execute()
 
 @app.route("/predict", methods=["POST"])
 def predict():

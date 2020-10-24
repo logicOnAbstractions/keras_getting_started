@@ -2,8 +2,6 @@
 # thus we can define multiple modes independantly here & just switch when we launch as we need
 default:
   main_program:
-    foo: 42
-    undeclared_attribute: "ignored"
   architecture:
     #describes the architecture of the network, layer by layers. we parse this into actual keras objects
     inputs:
@@ -21,10 +19,52 @@ default:
       - layer_type: Dense
         units: 128
         activation: relu
+tuner:
+  main_program:
+    optim: True
+    optimizer: KerasTuner
+  architecture:
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    inputs:
+      layer_type: Input
+      shape: [28,28]
+    outputs:
+      layer_type: Dense
+      units: 10
+      activation: softmax
+    layers:
+      - layer_type: Flatten
+      - layer_type: Dense
+        units: 256
+        activation: relu
+      - layer_type: Dense
+        units: 128
+        activation: relu
+      - layer_type: Dense
+        units: 64
+        activation: relu
+
 
 foo_mode:
   main_program:
-    foo: foo
-bar_mode:
-  main_program:
-    foo: bar
+  architecture:
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    inputs:
+      layer_type: Input
+      shape: [28,28]
+    outputs:
+      layer_type: Dense
+      units: 10
+      activation: softmax
+    layers:
+      - layer_type: Flatten
+      - layer_type: Dense
+        units: 256
+        activation: relu
+      - layer_type: Dense
+        units: 128
+        activation: relu
+      - layer_type: Dense
+        units: 64
+        activation: relu
+

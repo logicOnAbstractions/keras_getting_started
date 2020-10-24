@@ -22,6 +22,7 @@ class Model:
         """ """
         self.configs        = configs
         self.preprocessor   = None
+        self.model          = None
 
     def predict_single(self, data):
         """ makes a prediction. subclasses define what is predicted """
@@ -32,7 +33,8 @@ class Model:
         raise NotImplemented
     def instantiante_layers(self):
         """ uses content of self.configs to instantiate all of our model """
-
+        self.model = Default(self.configs)()
+        self.model.summary()
 
 class DigitsMNIST(Model):
     """ sample model that trains to recognize the MNIST digits classic example """
@@ -44,23 +46,21 @@ class DigitsMNIST(Model):
         self.layers         = Default(configs)
         self.configs        = configs
         self.mode           = "default"         # TODO: for now
+        self.instantiante_layers()
 
-    def excute_all(self):
+    def train(self):
         """ launches all the steps necessary to preprocess data, make predictions, etc. """
 
         # proprocess the data
         data = self.dao.get_mnist_dataset()         # TODO: currently returns none
-        LOG.info(f"got data from keras: {data}")
+        LOG.info(f"got data from keras: {data.keys()}")
         # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
+        self.model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
+        self.model.fit(data["x_train"],data["y_train"])
+        LOG.info(f"Finished training model. {self.model.history}")
 
-        model = self.layers()
-        model.summary()
-
-        model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
-
-        model.fit(data["x_train"],data["y_train"])
-        LOG.info(f"Finished training model. {model.history}")
-
+    def predict_single(self, data):
+        """ makes a prediction, assuming a trained model. if not will return random answer """
 
 class DogBreedModel(Model):
     """ takes in a dog image, & predicts what breed this is """

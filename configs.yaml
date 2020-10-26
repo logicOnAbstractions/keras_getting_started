@@ -2,6 +2,7 @@
 # thus we can define multiple modes independantly here & just switch when we launch as we need
 default:
   main_program:
+    model: DigitsMNIST
   architecture:
     #describes the architecture of the network, layer by layers. we parse this into actual keras objects
     inputs:
@@ -20,9 +21,14 @@ default:
         units: 128
         activation: relu
 tuner:
+  # sample using the kerastuner. We need to detect the hp.Units() because they initialize differently from the regular units.
+  # to do that we check for the type of units: if type(units) == list, then we will initialize it as a hp.unit thingy.
+  # otherwise regular parameters. So for single-argument units, still do: units: -10 for instance if it is meant as a tunable hyperparam
+  # for now, if a layer has at least one tunable params, all params must be tunable too (could be hp.Fixed())
   main_program:
     optim: True
     optimizer: KerasTuner
+    model: TestModel
   architecture:
     #describes the architecture of the network, layer by layers. we parse this into actual keras objects
     inputs:
@@ -35,8 +41,19 @@ tuner:
     layers:
       - layer_type: Flatten
       - layer_type: Dense
-        units: 256
-        activation: relu
+        units:
+          type: hp.Int
+          tunable_kwargs:
+            name: units
+            min_value: 32
+            max_value: 512
+            step: 32
+        activation:
+          values:
+            - relu
+            - softmax
+            - sigmoid
+            - selu
       - layer_type: Dense
         units: 128
         activation: relu
@@ -44,27 +61,4 @@ tuner:
         units: 64
         activation: relu
 
-
-foo_mode:
-  main_program:
-  architecture:
-    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
-    inputs:
-      layer_type: Input
-      shape: [28,28]
-    outputs:
-      layer_type: Dense
-      units: 10
-      activation: softmax
-    layers:
-      - layer_type: Flatten
-      - layer_type: Dense
-        units: 256
-        activation: relu
-      - layer_type: Dense
-        units: 128
-        activation: relu
-      - layer_type: Dense
-        units: 64
-        activation: relu
 

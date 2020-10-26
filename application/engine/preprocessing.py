@@ -26,7 +26,7 @@ class TextPreprocessor(Preprocessor):
     def __init__(self, data=None, output_mode="int", ngrams=2):
         """ """
         super().__init__(data=data)
-        self.output_mode        =output_mode
+        self.output_mode        = output_mode
         self.ngrams             = ngrams
         self.processor          = TextVectorization(output_mode=output_mode, ngrams=ngrams)
 

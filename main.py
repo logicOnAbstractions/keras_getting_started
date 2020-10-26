@@ -5,7 +5,7 @@ from utils import *
 from classes.arg_parser import ArgParser
 from logger import get_root_logger
 from dao import DiskDao
-from application.engine.engines import DogBreedModel, DigitsMNIST
+from application.engine.engines import DogBreedModel, DigitsMNIST, TestModel
 
 class MainProgram:
     """ the runner of the simulation
@@ -17,8 +17,13 @@ class MainProgram:
         self.LOG            = logger if logger else self.get_logger()
         self.arg_parser     = arg_parser if arg_parser else ArgParser(self.LOG)
         self.init_args()
-        self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
+        # self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
+        self.model          = None
         self.LOG.info(f"Done init in {self.__class__.__name__}.")
+        self.models_map     = {"DigitsMNIST":DigitsMNIST, "TestModel":TestModel}
+
+
+        self.init_model()
         self.execute()
 
     def init_args(self):
@@ -45,12 +50,15 @@ class MainProgram:
                 else:
                     self.LOG.warning(f"Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): {k}, {v}")
 
+    def init_model(self):
+        """ we expect the main_program.model: value to be a string of the desired class
+        that defines the model in our code. """
+        self.model = self.models_map[self.model_str](self.current_architecture)
+        self.LOG.info(f"Model instantiated in MP: {self.model.__class__.__name__}")
 
     def execute(self):
-
         # train the model
         self.model.train()
-
 
     @property
     def configs_default_mp(self):
@@ -65,6 +73,14 @@ class MainProgram:
     def mode(self):
         """ the config mode we want. defaults is set by argparser at default"""
         return self.args.mode
+
+    @property
+    def model_str(self):
+        return self.configs[self.mode]["main_program"]["model"]
+
+    @property
+    def current_architecture(self):
+        return self.configs[self.mode]["architecture"]
 
     @property
     def args(self):

@@ -5,3 +5,4 @@ gevent
 pillow
 Keras
 tensorflow
+keras-tuner

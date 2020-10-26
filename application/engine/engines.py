@@ -36,6 +36,7 @@ class Model:
         self.model = Default(self.configs)()
         self.model.summary()
 
+
 class DigitsMNIST(Model):
     """ sample model that trains to recognize the MNIST digits classic example """
 
@@ -61,6 +62,42 @@ class DigitsMNIST(Model):
 
     def predict_single(self, data):
         """ makes a prediction, assuming a trained model. if not will return random answer """
+
+
+class TestModel(Model):
+    """ a thing to fool around & test syntaxes etc.
+
+        currently we test for the keras tuner thingy, so this models makes default choiecs
+        to make that happen in the layer choices etc.
+     """
+
+    def __init__(self, configs):
+        """ """
+        super().__init__(configs)
+        self.dao            = DiskDao()
+        self.layers         = Default(configs)
+        self.configs        = configs
+        self.mode           = "default"         # TODO: for now
+        self.instantiante_layers()
+
+    def train(self):
+        """ launches all the steps necessary to preprocess data, make predictions, etc. """
+
+        # proprocess the data
+        data = self.dao.get_mnist_dataset()         # TODO: currently returns none
+        LOG.info(f"got data from keras: {data.keys()}")
+        # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
+        self.model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
+        self.model.fit(data["x_train"],data["y_train"])
+        LOG.info(f"Finished training model. {self.model.history}")
+
+    def predict_single(self, data):
+        """ makes a prediction, assuming a trained model. if not will return random answer """
+
+    def instantiante_layers(self):
+        """ uses content of self.configs to instantiate all of our model """
+        self.model = Default(self.configs, hp_optimize=True)()
+        self.model.summary()
 
 class DogBreedModel(Model):
     """ takes in a dog image, & predicts what breed this is """

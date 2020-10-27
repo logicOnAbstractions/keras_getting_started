@@ -3,20 +3,21 @@
 import unittest                         # our test lib
 from logger import get_root_logger
 from utils import *
-from main import MainProgram
 from classes.arg_parser import ArgParser
-import tensorflow.keras.datasets.mnist as mnist
+from dao import DiskDao
+from application.engine.engines import DigitsMNIST, Tuner
 
 class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
 
     def __init__(self, *args, **kwargs):
         super(SomeTests, self).__init__(*args, **kwargs)
         self.main_prog = None
+        self.dao        = DiskDao()
+        self.confs      = self.dao.get_yaml_testfile()
 
     def setUp(self):
         """ Runs after EACH test. Here we instantiate a new instance
          each test because we don't want the values modified by a previous test to influence the results of the next one"""
-        # self.main_prog = MainProgram(arg_parser=argparser, logger=LOG)           # instantiated every single test, so new instances all the time
 
     def tearDown(self):
         """
@@ -26,11 +27,41 @@ class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
 
     ################################################ tests
 
-    def test_add_glider(self):
-        """ okay, so ultimately this returns the same thing that the mlxtend thing does """
-        mnist_data = mnist.load_data(path="tasdfasd.gz")
-        print(mnist_data)
+    def test_yaml_loader(self):
+        """ tests that we receive proper yaml when loading """
+        test_confs = self.dao.get_yaml_testfile()["tests"]
+        self.assertTrue(isinstance(test_confs, dict))
 
+        # accessing a few keys that should be present
+        for key in ["main_program",]:
+            self.assertTrue(key in test_confs.keys())
+
+    def test_regular_model_MNIST(self):
+        """ Loads a model/a few described in the tests configs & runs them to check they're valid
+            Using our DigitMNIST class for now
+         """
+        for k,v in self.archs.items():
+            LOG.info(f"Testing architecture {k}")
+            model = DigitsMNIST(configs=v)
+            model.train()
+
+    def test_tuner_model_MNIST(self):
+        """ Loads a model/a few described in the tests configs & runs them to check they're valid
+            Using our DigitMNIST class for now
+         """
+        for k,v in self.archs.items():
+            LOG.info(f"Testing architecture {k}")
+            model = Tuner(configs=v)
+            model.train()
+
+
+    @property
+    def archs(self):
+        return self.confs["tests"]["architectures"]
+
+    @property
+    def tuner_archs(self):
+        return self.confs["tests"]["tuner_archs"]
 
 if __name__ == '__main__':
     import sys

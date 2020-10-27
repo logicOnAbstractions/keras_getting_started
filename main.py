@@ -5,7 +5,7 @@ from utils import *
 from classes.arg_parser import ArgParser
 from logger import get_root_logger
 from dao import DiskDao
-from application.engine.engines import DogBreedModel, DigitsMNIST, TestModel
+from application.engine.engines import DogBreedModel, DigitsMNIST, Tuner
 
 class MainProgram:
     """ the runner of the simulation
@@ -20,7 +20,7 @@ class MainProgram:
         # self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
         self.model          = None
         self.LOG.info(f"Done init in {self.__class__.__name__}.")
-        self.models_map     = {"DigitsMNIST":DigitsMNIST, "TestModel":TestModel}
+        self.models_map     = {"DigitsMNIST":DigitsMNIST, "TestModel":Tuner}
 
 
         self.init_model()
@@ -58,8 +58,10 @@ class MainProgram:
 
     def execute(self):
         # train the model
-        self.model.train()
-
+        try:
+            self.model.train()
+        except Exception as ex:
+            print(f"failed: {ex}")
     @property
     def configs_default_mp(self):
         """ returns the part of the config file that contains the configs by default for main program """

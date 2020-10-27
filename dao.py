@@ -30,3 +30,10 @@ class DiskDao(Dao):
         x_train, y_train = train
         x_test, y_test  = test
         return {"x_train":x_train, "y_train":y_train, "x_test":x_test, "y_test":y_test}
+
+    def get_yaml_testfile(self):
+        """ For test suit """
+        with open(os.path.join(TEST_DIR, TEST_FILE), 'r') as configs:
+            configs = yaml.load(configs, yaml.FullLoader)
+        self.LOG.info(f"Loaded yaml configs: {configs}")
+        return configs

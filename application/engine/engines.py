@@ -3,8 +3,10 @@
 from keras.applications import ResNet50
 from keras.preprocessing.image import img_to_array
 from keras.applications import imagenet_utils
-from application.engine.preprocessing import ImagePreprocessor
-from application.engine.layers_descriptions import Default
+from kerastuner.tuners import RandomSearch
+import keras
+import kerastuner.engine.hyperparameters as hp
+from application.engine.layers_descriptions import HyperMod
 from dao import DiskDao
 import tensorflow as tf
 import numpy as np
@@ -33,7 +35,7 @@ class Model:
         raise NotImplemented
     def instantiante_layers(self):
         """ uses content of self.configs to instantiate all of our model """
-        self.model = Default(self.configs)()
+        self.model = HyperMod(self.configs)()
         self.model.summary()
 
 
@@ -44,7 +46,7 @@ class DigitsMNIST(Model):
         """ """
         super().__init__(configs)
         self.dao            = DiskDao()
-        self.layers         = Default(configs)
+        self.layers         = HyperMod(configs)
         self.configs        = configs
         self.mode           = "default"         # TODO: for now
         self.instantiante_layers()
@@ -64,7 +66,7 @@ class DigitsMNIST(Model):
         """ makes a prediction, assuming a trained model. if not will return random answer """
 
 
-class TestModel(Model):
+class Tuner(Model):
     """ a thing to fool around & test syntaxes etc.
 
         currently we test for the keras tuner thingy, so this models makes default choiecs
@@ -75,29 +77,49 @@ class TestModel(Model):
         """ """
         super().__init__(configs)
         self.dao            = DiskDao()
-        self.layers         = Default(configs)
+        self.tuner_model    = HyperMod(configs)
         self.configs        = configs
         self.mode           = "default"         # TODO: for now
-        self.instantiante_layers()
+        # self.model          = None
+        # self.instantiante_layers()
 
     def train(self):
-        """ launches all the steps necessary to preprocess data, make predictions, etc. """
+        """ TODO: actually this should be def tune(..) - will have to reoncile/fix the nomentalures at some point """
+        tuner = RandomSearch(self.tuner_model, objective='val_accuracy', max_trials=3, executions_per_trial=2,
+                             directory='my_dir', project_name='helloworld')
 
         # proprocess the data
         data = self.dao.get_mnist_dataset()         # TODO: currently returns none
-        LOG.info(f"got data from keras: {data.keys()}")
+        LOG.info(f"BUILD: data from keras: {data.keys()}")
         # pass it to our model - the model also takes care of preprocessing so we just pass it the raw data we loaded
-        self.model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
-        self.model.fit(data["x_train"],data["y_train"])
-        LOG.info(f"Finished training model. {self.model.history}")
+        hp_learning_rate = hp.Choice('learning_rate', values=[1e-2, 1e-3, 1e-4])
+
+        x = data["x_train"]
+        y = data["y_train"]
+        x_val = data["x_test"]
+        y_val = data["y_test"]
+
+        print(f"label shapes: {y.shape} {y_val.shape}")
+        # call the tuner on that
+
+        try:
+            tuner.search(x, y, epochs=2, validation_data=(x_val, y_val))
+        except Exception as ex:
+            LOG.error(f"Failed to tuner.search: {ex}")
+        models = tuner.get_best_models(num_models=2)
+
+        # self.tuner_model.fit(data["x_train"],data["y_train"])
+        LOG.info(f"Finished tuning model. Summary:")
+        tuner.results_summary()
 
     def predict_single(self, data):
         """ makes a prediction, assuming a trained model. if not will return random answer """
 
     def instantiante_layers(self):
         """ uses content of self.configs to instantiate all of our model """
-        self.model = Default(self.configs, hp_optimize=True)()
-        self.model.summary()
+        self.tuner_model = HyperMod(self.configs)
+        self.tuner_model.summary()
+
 
 class DogBreedModel(Model):
     """ takes in a dog image, & predicts what breed this is """

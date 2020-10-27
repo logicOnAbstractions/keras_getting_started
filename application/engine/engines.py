@@ -6,7 +6,7 @@ from keras.applications import imagenet_utils
 from kerastuner.tuners import RandomSearch
 import keras
 import kerastuner.engine.hyperparameters as hp
-from application.engine.layers_descriptions import HyperMod
+from application.engine.layers_descriptions import DefaultArch
 from dao import DiskDao
 import tensorflow as tf
 import numpy as np
@@ -22,6 +22,7 @@ class Model:
     """
     def __init__(self, configs):
         """ """
+        LOG.info(f"Instantiating {self.__class__.__name__}")
         self.configs        = configs
         self.preprocessor   = None
         self.model          = None
@@ -34,8 +35,9 @@ class Model:
         """ Loads the appropriate model from keras """
         raise NotImplemented
     def instantiante_layers(self):
-        """ uses content of self.configs to instantiate all of our model """
-        self.model = HyperMod(self.configs)()
+        """ uses content of self.configs to instantiate all of our model. this uses the functional notation, which is fine
+         for non-tuners model, e.g. the default (see Tuner.instantiate_layers() override for details). """
+        self.model = DefaultArch(self.configs)()
         self.model.summary()
 
 
@@ -45,8 +47,9 @@ class DigitsMNIST(Model):
     def __init__(self, configs):
         """ """
         super().__init__(configs)
+        LOG.info(f"Instantiating {self.__class__.__name__}")
         self.dao            = DiskDao()
-        self.layers         = HyperMod(configs)
+        self.layers         = DefaultArch(configs)
         self.configs        = configs
         self.mode           = "default"         # TODO: for now
         self.instantiante_layers()
@@ -76,8 +79,10 @@ class Tuner(Model):
     def __init__(self, configs):
         """ """
         super().__init__(configs)
+        LOG.info(f"Instantiating {self.__class__.__name__}")
+
         self.dao            = DiskDao()
-        self.tuner_model    = HyperMod(configs)
+        self.tuner_model    = DefaultArch(configs)
         self.configs        = configs
         self.mode           = "default"         # TODO: for now
         # self.model          = None
@@ -116,8 +121,10 @@ class Tuner(Model):
         """ makes a prediction, assuming a trained model. if not will return random answer """
 
     def instantiante_layers(self):
-        """ uses content of self.configs to instantiate all of our model """
-        self.tuner_model = HyperMod(self.configs)
+        """ known issue: cannot build (e.g. call the functional keras.Layer()() form ) right away.
+            the kerastuner expects the model to build only at runtime, after we pass it kerastuner.engines.hyperparameters (hp))
+        """
+        self.tuner_model = DefaultArch(self.configs)        # NOTE: we DONT use the functional notation here, because the actual model needs to be built at runtime when self.tuner.build(hp) is called by the kerastuner
         self.tuner_model.summary()
 
 

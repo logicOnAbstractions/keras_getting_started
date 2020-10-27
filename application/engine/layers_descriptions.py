@@ -74,7 +74,10 @@ class Architectures(HyperModel):
         return  model
 
     def build(self, hp):
-        """ the tuner expect a build() method it can call on the obj to make the tuner """
+        """ the tuner expect a build() method it can call on the obj to make the tuner.
+
+            thus this build triggers the tuning phase of the algo
+         """
         LOG.info(f"Architecture.build().... configs: {self.configs}")
         inputs_desc     = self.configs["inputs"]
         outputs_desc    = self.configs["outputs"]
@@ -122,16 +125,20 @@ class Architectures(HyperModel):
     def inputs(self):
         return self.configs[self.mode]["architecture"]["inputs"]
 
-class HyperMod(Architectures):
+class DefaultArch(Architectures):
     def __init__(self, configs):
         """ """
         super().__init__(configs)
+        LOG.info(f"Instantiating {self.__class__.__name__}")
         self.preprocessor = ImagePreprocessor()
 
     def __call__(self):
-        """ receives the configs loaded from configs.yaml that describe each layers """
+        """ build the model as specified in the configs """
 
         if self.hp_optimize:
             return self._build_model()
         else:
             return self._build_model()
+
+class TunerArch(Architectures):
+    """ an architecture meant to optimiz with the kerastuner """

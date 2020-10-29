@@ -1,10 +1,75 @@
 # basic mode -defaults. Mode can be selected from a cmdline argument.
 # thus we can define multiple modes independantly here & just switch when we launch as we need
-default:
+
+template:
   main_program:
-    model: DigitsMNIST
+    engine: PredictionEngine
+    tuner: False
   architecture:
     #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    preprocessor: []                    # expected a list of processor layers if any. an empty list [] evaluates to false in python
+    inputs:
+      layer_type: Input
+      shape: [ 28,28 ]
+    outputs:
+      layer_type: Dense
+      units: 10
+      activation: softmax
+    # from the docs - all activation layers can be passed as string arguments (https://keras.io/api/layers/activations/). So no need to complexify things at this point by parsing activation layers as separate objects
+    # the only drawback from this is that it doesn't seem possible to override default arguments. so fine-tuning isn't as possible. Will refactor if that ever becomes a limitation
+    layers:
+      - layer_type: Dense
+        units: 128
+        activation: relu
+        metrics: []
+        loss: null
+
+default:
+  main_program:                 &main_program
+    engine: PredictionEngine
+    tuner: False
+  architecture:                 &architecture
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    preprocessor: [ ]                    # expected a list of processor layers if any. an empty list [] evaluates to false in python
+    inputs:                     &inputs
+      layer_type: Input
+      shape: [28,28]
+    outputs:                    &outputs
+      layer_type: Dense
+      units: 10
+      activation: softmax
+    layers:                     &layers
+      - layer_type: Flatten
+      - layer_type: Dense
+        units: 128
+        activation: relu
+      - layer_type: Dense
+        units: 128
+        activation: relu
+    # **kwargs served to model.compile(**kwargs)
+    compile:                    &compile
+      loss: sparse_categorical_crossentropy
+      metrics:
+        - accuracy
+        - sparse_categorical_crossentropy
+    dataset:                    &dataset         # where to take the data from - for now, we only use keras-provided data from their api
+      datasource: KerasApiDao
+      type: mnist
+      kwargs:
+        path: "mnist.npz"
+
+tuner:
+  # sample using the kerastuner. We need to detect the hp.Units() because they initialize differently from the regular units.
+  # to do that we check for the type of units: if type(units) == list, then we will initialize it as a hp.unit thingy.
+  # otherwise regular parameters. So for single-argument units, still do: units: -10 for instance if it is meant as a tunable hyperparam
+  # for now, if a layer has at least one tunable params, all params must be tunable too (could be hp.Fixed())
+  main_program:
+    <<: *main_program           # merge here whatever is in the default model
+    tuner: True                 # use the kerastuner to optimiz model hyparams. default is False.
+    engine: TunerEngine
+  architecture:
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    preprocessor: []
     inputs:
       layer_type: Input
       shape: [28,28]
@@ -15,20 +80,69 @@ default:
     layers:
       - layer_type: Flatten
       - layer_type: Dense
-        units: 128
+        units:
+          type: hp.Int
+          tunable_kwargs:
+            name: units
+            min_value: 32
+            max_value: 1000
+            step: 32
         activation: relu
-      - layer_type: Dense
-        units: 128
-        activation: relu
-tuner:
-  # sample using the kerastuner. We need to detect the hp.Units() because they initialize differently from the regular units.
-  # to do that we check for the type of units: if type(units) == list, then we will initialize it as a hp.unit thingy.
-  # otherwise regular parameters. So for single-argument units, still do: units: -10 for instance if it is meant as a tunable hyperparam
-  # for now, if a layer has at least one tunable params, all params must be tunable too (could be hp.Fixed())
+
+
+    compile:        # **kwargs served to model.compile(**kwargs)
+      <<: *compile
+    dataset:
+      <<: *dataset
+      type: cifar10
+      kwargs: {}
+
+
+cifar10:
   main_program:
-    optim: True
-    optimizer: KerasTuner
-    model: TestModel
+    <<: *main_program           # merge here whatever is in the default model
+  architecture:
+    #describes the architecture of the network, layer by layers. we parse this into actual keras objects
+    preprocessor:
+      - layer_type: Rescaling
+        scale: 0.00392156862745098
+    inputs:
+      layer_type: Input
+      shape: [32, 32, 3]
+    outputs:
+      layer_type: Dense
+      units: 10
+      activation: softmax
+    layers:
+      - layer_type: Conv2D
+        filters: 8
+        kernel_size: [4,4]
+        activation: relu
+      - layer_type: MaxPooling2D
+        pool_size: [2,2]
+      - layer_type: Conv2D
+        filters: 8
+        kernel_size: [4,4]
+        activation: relu
+      - layer_type: MaxPooling2D
+        pool_size: [2,2]
+      - layer_type: Conv2D
+        filters: 8
+        kernel_size: [4,4]
+        activation: relu
+      - layer_type: GlobalAveragePooling2D
+    compile:        # **kwargs served to model.compile(**kwargs)
+      <<: *compile
+    dataset:
+      <<: *dataset
+      type: cifar10
+      kwargs: {}
+
+tuner_2:
+  main_program:
+    <<: *main_program           # merge here whatever is in the default model
+    tuner: True                 # use the kerastuner to optimiz model hyparams. default is False.
+    engine: TunerEngine
   architecture:
     #describes the architecture of the network, layer by layers. we parse this into actual keras objects
     inputs:
@@ -46,7 +160,7 @@ tuner:
           tunable_kwargs:
             name: units
             min_value: 32
-            max_value: 512
+            max_value: 1000
             step: 32
         activation:
           values:
@@ -54,11 +168,9 @@ tuner:
             - softmax
             - sigmoid
             - selu
-      - layer_type: Dense
-        units: 128
-        activation: relu
-      - layer_type: Dense
-        units: 64
-        activation: relu
+    compile:        # **kwargs served to model.compile(**kwargs)
+      <<: *compile
+    dataset:
+      <<: *dataset
 
 

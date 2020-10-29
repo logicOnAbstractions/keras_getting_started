@@ -5,7 +5,7 @@ from utils import *
 from classes.arg_parser import ArgParser
 from logger import get_root_logger
 from dao import DiskDao
-from application.engine.engines import DogBreedModel, DigitsMNIST, Tuner
+from application.engine.engines import PredictionEngine, TunerEngine
 
 class MainProgram:
     """ the runner of the simulation
@@ -16,14 +16,14 @@ class MainProgram:
         self.dao            = DiskDao()
         self.LOG            = logger if logger else self.get_logger()
         self.arg_parser     = arg_parser if arg_parser else ArgParser(self.LOG)
+        self.tuner          = False
         self.init_args()
-        # self.model          = DigitsMNIST(self.configs[self.mode]["architecture"])
-        self.model          = None
+        self.engine          = None
         self.LOG.info(f"Done init in {self.__class__.__name__}.")
-        self.models_map     = {"DigitsMNIST":DigitsMNIST, "TestModel":Tuner}
+        self.engine_map     = {"PredictionEngine":PredictionEngine, "TunerEngine":TunerEngine}
 
 
-        self.init_model()
+        self.init_engine()
         self.execute()
 
     def init_args(self):
@@ -49,19 +49,18 @@ class MainProgram:
                     self.LOG.info(f"Attribute {k} has been set to {getattr(self, k)}, overriding default values if any.")
                 else:
                     self.LOG.warning(f"Config file contains an attribute that is not in this class's attribute and therefore has not been set (k,v): {k}, {v}")
+        # next we merge as well
 
-    def init_model(self):
-        """ we expect the main_program.model: value to be a string of the desired class
-        that defines the model in our code. """
-        self.model = self.models_map[self.model_str](self.current_architecture)
-        self.LOG.info(f"Model instantiated in MP: {self.model.__class__.__name__}")
+    def init_engine(self):
+        """ we expect the main_program.engine: value to be a string of the desired class
+        that defines the engine in our code. """
+        self.engine = self.engine_map[self.engine_str](self.current_architecture)
+        self.LOG.info(f"Engine instantiated in MP: {self.engine.__class__.__name__}")
 
     def execute(self):
-        # train the model
-        try:
-            self.model.train()
-        except Exception as ex:
-            print(f"failed: {ex}")
+        # let the engine starts its actions, whatever it is
+        self.engine.execute()
+
     @property
     def configs_default_mp(self):
         """ returns the part of the config file that contains the configs by default for main program """
@@ -77,8 +76,8 @@ class MainProgram:
         return self.args.mode
 
     @property
-    def model_str(self):
-        return self.configs[self.mode]["main_program"]["model"]
+    def engine_str(self):
+        return self.configs[self.mode]["main_program"]["engine"]
 
     @property
     def current_architecture(self):
@@ -87,6 +86,11 @@ class MainProgram:
     @property
     def args(self):
         return self.arg_parser.args
+
+    @property
+    def mainprogram_configs(self):
+        return self.configs[self.mode]["main_program"]
+
 
     def get_logger(self):
         """ inits the logs. should only be if for whatever reason no logger has been defined """

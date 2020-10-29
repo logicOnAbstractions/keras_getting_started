@@ -5,7 +5,7 @@ from logger import get_root_logger
 from utils import *
 from classes.arg_parser import ArgParser
 from dao import DiskDao
-from application.engine.engines import DigitsMNIST, Tuner
+from application.engine.engines import PredictionEngine, TunerEngine
 
 class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
 
@@ -42,8 +42,8 @@ class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
          """
         for k,v in self.archs.items():
             LOG.info(f"Testing architecture {k}")
-            model = DigitsMNIST(configs=v)
-            model.train()
+            model = PredictionEngine(architecture_configs=v)
+            model.execute()
 
     def test_tuner_model_MNIST(self):
         """ Loads a model/a few described in the tests configs & runs them to check they're valid
@@ -51,8 +51,8 @@ class SomeTests(unittest.TestCase):     # on doit hériter de TestCase
          """
         for k,v in self.archs.items():
             LOG.info(f"Testing architecture {k}")
-            model = Tuner(configs=v)
-            model.train()
+            model = TunerEngine(architecture_configs=v)
+            model.execute()
 
 
     @property

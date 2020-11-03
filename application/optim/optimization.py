@@ -1,29 +1,8 @@
-""" contains the different optimizers we can use to refine our learning models """
-""" a few notes not obvious from the tuto/get started:
+""" contains the different optimizers we can use to refine our learning models
 
-    * hp is a module that contains the variable hyperparameters options for model tuning.
-        * options: hp.Choice, hp.Int, hp.Boolean, hp.Float, hp.Fixed
+    * ultimately i would want to do some "mixted" optimization. e.g. there's the keras tuner that can already do a lot
+    * however, there are insteresting approaches for things like #/types of layers etc... that use say bayesian optim
+    * could also wrap some of the optim into numpy's optimizer
+    * but that should all come a bit later
 
 """
-
-from kerastuner import HyperModel as HypMod
-import kerastuner.engine.hyperparameters as hp
-
-
-class KerasTuner(HypMod):
-    def __init__(self, model=None, *args, **kwargs):
-        """ """
-        super().__init__(*args, **kwargs)
-        self.model      = model
-
-    def build(self, hp):
-        """ """
-
-        # we already have the model
-
-        # however that model have fixed values, in its layer description, which we need to replace by our hp.Choice, hp.Int etc.
-
-        # that means we either need to go through updating all the layer's hp,
-        # or perhaps better yet have our model be able to return a usable form (default)
-        # or as optimizable form, where we specify which param should be regular int/float/etc.
-        # and which ones need to be hp.Stuff(...)

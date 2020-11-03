@@ -17,3 +17,26 @@ Then one can use /server/comms.py to make a call. Eventually the full API/webpag
 NOTE: the default values are always set, regardless of the mode selected. What the other modes do is that they
 override any such values with whatever is put there. No need to fully re-defined all attribute if using
 a non-default mode.
+
+command-line structure
+----------------------------
+
+could use `click<https://click.palletsprojects.com/en/7.x/>`_ to produce a cmd-line structure, to be used similarly to bash programs:
+* you basically launch cmds atomically
+* that command has some effect on files, state of models, etc.
+* then you launch another cmds, launch a cmds for status, etc.
+* kinda like docker works in cmdline, especially considering they also use config files to tell the prgm what to to
+* the cmd line is then there mostly to tell the prog to use which file & what action to perform from it
+
+plus & minus
+~~~~~~~~~~~~~~~~~~~
+
+plusses:
+^^^^^^^^^^^
+#. easier to build incrementally - just add gradually more features & drop the decorators etc. into the program as needed
+#. no need to build into the code some paths/sequences of cmds - the user actually decides what the sequence is
+
+minusses:
+^^^^^^^^^^^
+#. tighter coupling? seems at the very least I'll have ot drop decorators, & potentially embed lots of click code all over the application
+#. messier looking code in the app

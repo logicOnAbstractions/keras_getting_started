@@ -79,6 +79,7 @@ class Engine:
     def data(self):
         return self.datasource.get_data()
 
+
 class PredictionEngine(Engine):
     """ sample model that trains to recognize the MNIST digits classic example """
 
@@ -115,7 +116,6 @@ class TunerEngine(Engine):
         """ """
         super().__init__(architecture_configs)
         LOG.info(f"Instantiating {self.__class__.__name__}")
-
 
     def execute(self):
         """ Specifies what happens when we want to launch this model."""

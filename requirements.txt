@@ -6,3 +6,4 @@ pillow
 Keras
 tensorflow
 keras-tuner
+numpy

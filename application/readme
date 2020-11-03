@@ -1,6 +1,7 @@
 about
 ---------
-* machine learning on a rest api
+* machine learning on a rest api (deprec/removed)
+* now building instead a wrapper
 
 usage
 --------
